@@ -1,4 +1,6 @@
 const mongoose=require('mongoose');
+mongoose.set("strictQuery", false);
+
 mongoose.connect(process.env.Mongo_uri).
 then(()=>{
     console.log('db connected');
